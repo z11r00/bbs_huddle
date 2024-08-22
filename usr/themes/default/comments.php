@@ -17,7 +17,8 @@
             </div>
 
             <h3 id="response"><?php _e('添加新评论'); ?></h3>
-            <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
+            <!--<form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">-->
+			<form method="post" action="#" id="comment-form" role="form">
                 <?php if ($this->user->hasLogin()): ?>
                     <p><?php _e('登录身份: '); ?><a
                             href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a
@@ -48,7 +49,7 @@
                               required><?php $this->remember('text'); ?></textarea>
                 </p>
                 <p>
-                    <button type="submit" class="submit"><?php _e('提交评论'); ?></button>
+                    <!--<button type="submit" class="submit"><?php _e('提交评论'); ?></button>-->
                 </p>
             </form>
         </div>
